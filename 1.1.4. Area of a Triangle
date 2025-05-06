@@ -1,0 +1,5 @@
+B=float(input("Base: "))
+H=float(input("Height: "))
+
+triangle=1/2*(B*H)
+print("Area:",format(triangle,".2f"))
