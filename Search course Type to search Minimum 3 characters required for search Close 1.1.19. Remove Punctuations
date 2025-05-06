@@ -1,0 +1,9 @@
+import string
+
+def remove(sen):
+	trans = str.maketrans('','',string.punctuation)
+	return sen.translate(trans)
+
+str = input()
+modified = remove(str)
+print(modified)
