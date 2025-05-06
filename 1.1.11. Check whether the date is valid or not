@@ -1,0 +1,14 @@
+import datetime
+def Date(year,month,day):
+	try:
+		date = datetime.date(year,month,day)
+		inc = date + datetime.timedelta(days=1)
+		return f"valid\nincremented date: {inc}"
+	except ValueError :
+		return "invalid"
+
+year = int(input("year: "))
+month = int(input("month: "))
+day = int(input("day: "))
+
+print(Date(year,month,day))
